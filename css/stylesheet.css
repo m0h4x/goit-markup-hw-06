@@ -119,7 +119,7 @@ ul {
   margin-left: auto;
 }
 
-.auth-adr-item:not(:last-child) {
+.site-adr-item:not(:last-child) {
   margin-right: 50px;
 }
 .site-adr-link {
