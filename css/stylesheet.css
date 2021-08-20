@@ -699,14 +699,14 @@ ul {
 .close-button-icon {
   transform: translate(-10%, 10%);
 }
-.backdrop-close-button::before {
+/* .backdrop-close-button::before {
   content: "";
   display: inline-block;
   width: 18px;
   height: 18px;
   transform: translate(-10%, 10%);
   background-image: url("../images/close-button.svg");
-}
+} */
 .current::after {
   position: absolute;
   content: "";
