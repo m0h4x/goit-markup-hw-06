@@ -873,6 +873,14 @@ ul {
   height: 1px;
   margin: -1px;
 }
+
+.modal-checkbox:checked + .icon {
+  background-color: var(--accent-color);
+  background-image: url('images/icon-check.svg');
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
 .eula {
   display: flex;
   align-items: center;
