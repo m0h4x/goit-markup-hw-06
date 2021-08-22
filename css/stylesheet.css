@@ -701,6 +701,9 @@ ul {
 }
 .close-button-icon {
   transform: translate(-10%, 10%);
+    transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .backdrop-close-button::before {
   content: "";
@@ -710,6 +713,9 @@ ul {
   transform: translate(-10%, 10%);
   background-image: url("../images/close-button.svg");
 } */
+.backdrop-close-button:hover .close-button-icon {
+  fill: var(--accent-color);
+}
 .current::after {
   position: absolute;
   content: "";
@@ -843,6 +849,12 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-input:hover,
+.modal-input:focus {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  outline: transparent;
+}
 .modal-icon {
   position: absolute;
   left: 12px;
@@ -864,6 +876,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+.modal-textarea:hover,
 .modal-textarea:focus-within {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
@@ -877,9 +890,7 @@ textarea {
 .checkbox-vector {
   margin-right: 8px;
 }
-.modal-input:focus + .modal-icon {
-  fill: var(--accent-color);
-}
+
 .icon {
   display: inline-block;
   width: 16px;
